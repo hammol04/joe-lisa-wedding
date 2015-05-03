@@ -92,6 +92,7 @@
         },
         {
             "name": "silex/silex",
+<<<<<<< HEAD
             "version": "v1.2.4",
             "source": {
                 "type": "git",
@@ -102,20 +103,40 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/silexphp/Silex/zipball/417deb440eecf776df868d8760d0b7d8e2c4e6d1",
                 "reference": "417deb440eecf776df868d8760d0b7d8e2c4e6d1",
+=======
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Silex.git",
+                "reference": "57c98ea0cb47664096094912920951fde1f4631a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Silex/zipball/57c98ea0cb47664096094912920951fde1f4631a",
+                "reference": "57c98ea0cb47664096094912920951fde1f4631a",
+>>>>>>> d040185687d19fd19020f1319d85b084017189fc
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "pimple/pimple": "~1.0",
+<<<<<<< HEAD
                 "symfony/event-dispatcher": "~2.3,<2.7",
                 "symfony/http-foundation": "~2.3,<2.7",
                 "symfony/http-kernel": "~2.3,<2.7",
                 "symfony/routing": "~2.3,<2.7"
+=======
+                "symfony/event-dispatcher": "~2.3,<3.0",
+                "symfony/http-foundation": "~2.3,<3.0",
+                "symfony/http-kernel": "~2.3,<3.0",
+                "symfony/routing": "~2.3,<3.0"
+>>>>>>> d040185687d19fd19020f1319d85b084017189fc
             },
             "require-dev": {
                 "doctrine/dbal": "~2.2",
                 "monolog/monolog": "~1.4,>=1.4.1",
                 "swiftmailer/swiftmailer": "5.*",
+<<<<<<< HEAD
                 "symfony/browser-kit": "~2.3,<2.7",
                 "symfony/config": "~2.3,<2.7",
                 "symfony/css-selector": "~2.3,<2.7",
@@ -132,6 +153,24 @@
                 "symfony/translation": "~2.3,<2.7",
                 "symfony/twig-bridge": "~2.3,<2.7",
                 "symfony/validator": "~2.3,<2.7",
+=======
+                "symfony/browser-kit": "~2.3,<3.0",
+                "symfony/config": "~2.3,<3.0",
+                "symfony/css-selector": "~2.3,<3.0",
+                "symfony/debug": "~2.3,<3.0",
+                "symfony/dom-crawler": "~2.3,<3.0",
+                "symfony/finder": "~2.3,<3.0",
+                "symfony/form": "~2.3,<3.0",
+                "symfony/locale": "~2.3,<3.0",
+                "symfony/monolog-bridge": "~2.3,<3.0",
+                "symfony/options-resolver": "~2.3,<3.0",
+                "symfony/process": "~2.3,<3.0",
+                "symfony/security": "~2.3,<3.0",
+                "symfony/serializer": "~2.3,<3.0",
+                "symfony/translation": "~2.3,<3.0",
+                "symfony/twig-bridge": "~2.3,<3.0",
+                "symfony/validator": "~2.3,<3.0",
+>>>>>>> d040185687d19fd19020f1319d85b084017189fc
                 "twig/twig": ">=1.8.0,<2.0-dev"
             },
             "suggest": {
@@ -170,7 +209,11 @@
             "keywords": [
                 "microframework"
             ],
+<<<<<<< HEAD
             "time": "2015-04-11 12:43:27"
+=======
+            "time": "2015-01-20 16:45:58"
+>>>>>>> d040185687d19fd19020f1319d85b084017189fc
         },
         {
             "name": "symfony/debug",
@@ -495,6 +538,7 @@
         },
         {
             "name": "twig/twig",
+<<<<<<< HEAD
             "version": "v1.18.1",
             "source": {
                 "type": "git",
@@ -509,6 +553,22 @@
             },
             "require": {
                 "php": ">=5.2.7"
+=======
+            "version": "v1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4cf7464348e7f9893a93f7096a90b73722be99cf",
+                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+>>>>>>> d040185687d19fd19020f1319d85b084017189fc
             },
             "type": "library",
             "extra": {
@@ -548,7 +608,11 @@
             "keywords": [
                 "templating"
             ],
+<<<<<<< HEAD
             "time": "2015-04-19 08:30:27"
+=======
+            "time": "2015-01-25 17:32:08"
+>>>>>>> d040185687d19fd19020f1319d85b084017189fc
         }
     ],
     "packages-dev": [],
