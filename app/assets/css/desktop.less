@@ -1,27 +1,4 @@
 @media screen and (min-width: 800px) {
-  .head {
-    background: #000000;
-    height: 300px;
-    line-height: 80px;
-    vertical-align: middle;
-
-    .title {
-      padding-top: 60px;
-      padding-right: 10px;
-
-      h1 {
-        color: #FFFFFF;
-        font-family: "Roboto Slab";
-        font-size: 70px;
-      }
-
-      h2 {
-        color: #c2ccd1;
-        font-family: "Roboto-Regular";
-        font-size: 30px;
-      }
-    }
-  }
 
   .container {
     max-width: 1008px;
@@ -35,6 +12,57 @@
     h1 {
       font-size: 45px;
     }
+  }
+
+  .fixed-left {
+    width: 25%;
+    background: rgba(255, 255, 255, 0.6);
+    border-top: 5px solid #76656b;
+    border-right: 5px solid #76656b;
+    border-bottom: 5px solid #76656b;
+    padding: 15px;
+    padding-bottom:40px;
+
+    h2 {
+      margin: 0;
+      font-size: 25px;
+      color: #625359;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #76656b;
+    }
+  }
+
+  .fixed-right {
+    background: rgba(255, 255, 255, 0.6);
+    width: 70%;
+    min-height: 100%;
+  }
+
+  #index-wrap {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 70%;
+    border-top: 5px solid #76656b;
+    border-left: 5px solid #76656b;
+    overflow: hidden;
+
+    .gallery {
+      cursor: move;
+      position: absolute;
+      overflow: hidden;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+    }
+  }
+
+  .logo-nav {
+    float: right;
   }
 
   .third {

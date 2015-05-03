@@ -5,7 +5,9 @@
     }
 
     Wedding.prototype.init = function() {
-        this.slider = new Slider();
+        if (window.width >= 800) {
+            this.slider = new Slider();
+        }
     };
 
     return new Wedding();
