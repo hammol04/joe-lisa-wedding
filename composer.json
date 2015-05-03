@@ -7,11 +7,7 @@
 
   "autoload": {
     "psr-4": {
-<<<<<<< HEAD
       "wedding\\joeandlisa\\": "app/src"
-=======
-      "uk\\co\\hammade\\": "app/src"
->>>>>>> d040185687d19fd19020f1319d85b084017189fc
     }
   }
 }
