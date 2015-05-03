@@ -12,7 +12,7 @@
 
     Slider.prototype.options = function() {
         return {
-            $AutoPlay: true
+            $AutoPlay: false
         }
     };
 
@@ -25,6 +25,8 @@
 
         for (var i = 0; i < images.length; i++) {
             images[i].style.minHeight = realHeight;
+            images[i].style.width = "100%";
+            images[i].style.height = "auto";
         }
     };
 
