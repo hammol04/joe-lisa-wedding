@@ -17,8 +17,15 @@
     };
 
     Slider.prototype.calculateHeight = function() {
-        var height = this.slider.$Elmt.getBoundingClientRect().top;
-        this.slider.$Elmt.style.height = window.innerHeight - height + "px";
+        var height = this.slider.$Elmt.getBoundingClientRect().top,
+            realHeight = window.innerHeight - height + "px",
+            images = this.slider.$Elmt.querySelectorAll("div, img");
+
+        this.slider.$Elmt.style.minHeight = realHeight;
+
+        for (var i = 0; i < images.length; i++) {
+            images[i].style.minHeight = realHeight;
+        }
     };
 
     Slider.prototype.addListeners = function() {

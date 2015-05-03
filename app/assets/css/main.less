@@ -117,13 +117,14 @@ body, html {
   min-height: 100%;
 }
 
-#index-gallery {
+#index-wrap {
   position: relative;
   top: 0px;
   left: 0px;
   width: 70%;
   border-top: 5px solid #76656b;
   border-left: 5px solid #76656b;
+  overflow: hidden;
 
   .gallery {
     cursor: move;
@@ -131,6 +132,6 @@ body, html {
     overflow: hidden;
     left: 0px;
     top: 0px;
-    width: 70%;
+    min-width: 100%;
   }
 }
