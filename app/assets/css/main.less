@@ -1,0 +1,123 @@
+//IMPORTS
+
+@import "fonts";
+
+// HELPERS
+
+body, html {
+  background: #ffffff url("../img/symphony.png");
+  font-family: Georgia, serif;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.clear {
+  clear: both;
+}
+
+.nospace {
+  margin: 0;
+  padding: 0;
+}
+
+.nostyle {
+  list-style-type: none;
+}
+
+.block {
+  display: block;
+}
+
+// LAYOUT
+
+@import "mobile";
+@import "desktop";
+
+.main {
+  width: 100%;
+}
+
+.logo {
+  padding: 10px;
+  width: 300px;
+}
+
+.img {
+  min-width: 75%;
+  min-height:100%;
+  float: right;
+}
+
+.nav {
+  a {
+    display: block;
+  }
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 5px solid #76656b;
+  margin-bottom: 20px;
+}
+
+.sub-nav {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 12px;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    width: 80px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    border-right: 1px solid #9e8f94;
+  }
+
+  li:last-child {
+    border-right: 0;
+  }
+}
+
+.fixed-left {
+  width: 25%;
+  background: rgba(255, 255, 255, 0.6);
+  border-top: 5px solid #76656b;
+  border-right: 5px solid #76656b;
+  border-bottom: 5px solid #76656b;
+  padding: 15px;
+  padding-bottom:40px;
+
+  h2 {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.fixed-right {
+  background: rgba(255, 255, 255, 0.6);
+  border-top: 5px solid #76656b;
+  border-left: 5px solid #76656b;
+  border-bottom: 5px solid #76656b;
+  width: 70%;
+  min-height: 100%;
+}
