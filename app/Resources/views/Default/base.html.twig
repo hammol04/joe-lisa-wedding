@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ham-made - {{ page.title }}</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    {{ page.css |raw }}
+</head>
+<body class="nospace">
+    <div class="main">
+        {{ page.content|raw }}
+    </div>
+    <script src="assets/js/hammade.js"></script>
+    {{ page.js |raw }}
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "require": {
+    "php": ">=5.3",
+    "silex/silex": "*@stable",
+    "twig/twig": ">=1.8"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "uk\\co\\hammade\\": "app/src"
+    }
+  }
+}
