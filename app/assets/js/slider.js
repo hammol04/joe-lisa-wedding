@@ -5,7 +5,7 @@
     }
 
     Slider.prototype.init = function() {
-        this.slider = new JSSlider('index-gallery', this.options);
+        this.slider = new JSSlider('index-gallery', this.options());
         this.calculateHeight();
         this.addListeners();
     };
