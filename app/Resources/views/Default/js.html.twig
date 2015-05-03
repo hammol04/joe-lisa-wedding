@@ -1,4 +1,4 @@
-{% if jss %}
+{% if jss is defined %}
     {% for js in jss %}
         <script src="assets/js/{{ js }}"></script>
     {% endfor %}

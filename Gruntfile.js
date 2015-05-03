@@ -6,8 +6,7 @@ module.exports = function ( grunt ) {
                     compress: true
                 },
                 files: {
-                    "web/assets/css/main.css": "app/assets/css/main.less",
-                    "web/assets/css/fonts.css": "app/assets/css/fonts.less"
+                    "web/assets/css/main.css": "app/assets/css/main.less"
                 }
             }
         },
@@ -17,11 +16,10 @@ module.exports = function ( grunt ) {
             },
             js: {
                 src: [
-                    'bower_components/jquery/jquery.js',
-                    'bower_components/bootstrap/dist/js/bootstrap.js',
-                    'app/assets/js/hammade.js'
+                    'app/assets/js/slider.js',
+                    'app/assets/js/wedding.js'
                 ],
-                dest: 'web/assets/js/hammade.js'
+                dest: 'web/assets/js/wedding.js'
             }
         },
         uglify: {
@@ -30,22 +28,7 @@ module.exports = function ( grunt ) {
             },
             js: {
                 files: {
-                    'web/assets/js/hammade.js': 'web/assets/js/hammade.js'
-                }
-            }
-        },
-        requirejs: {
-            options: {
-                baseUrl: "bower_components/require",
-                optimizeCss: false,
-                paths: {
-                    "jquery": "bower_components/jquery/jquery.js",
-                    "boostrap": "bower_components/bootstrap/dist/js/bootstrap.js",
-                    modules: [{
-                        name: "hammade"
-                    }],
-                    generateSourceMaps: true,
-                    preserveLicenseComments: false
+                    'web/assets/js/wedding.js': 'web/assets/js/wedding.js'
                 }
             }
         },
@@ -65,15 +48,15 @@ module.exports = function ( grunt ) {
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/roboto-fontface',
+                        cwd: 'bower_components/jquery/dist/',
                         src: ['**'],
-                        dest: 'web/assets/fonts/roboto-fontface'
+                        dest: 'web/assets/js/dep'
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/roboto-slab-fontface',
+                        cwd: 'bower_components/jssor-slider/js',
                         src: ['**'],
-                        dest: 'web/assets/fonts/roboto-slab-fontface'
+                        dest: 'web/assets/js/dep'
                     }
                 ]
             }
@@ -85,10 +68,9 @@ module.exports = function ( grunt ) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks( "grunt-contrib-copy" );
-    grunt.loadNpmTasks( "grunt-contrib-requirejs" );
     grunt.loadNpmTasks( "grunt-shell" );
 
     // Register Tasks
     grunt.registerTask( "server", [ "shell:server" ] );
-    grunt.registerTask( "default", [ "less", "requirejs", "copy:main:files", "concat", "uglify" ] );
+    grunt.registerTask( "default", [ "less", "copy:main:files", "concat", "uglify" ] );
 };
