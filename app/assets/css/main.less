@@ -3,8 +3,8 @@
 // HELPERS
 
 body, html {
-  background: #ffffff url("../img/symphony.png");
-  font-family: Georgia, serif;
+  background: #ffffff;
+  font-family: "SignPainter-HouseScript", serif;
 }
 
 .right {
@@ -21,6 +21,7 @@ body, html {
 
 .uppercase {
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .clear {
@@ -61,31 +62,29 @@ body, html {
 }
 
 .nav {
-  a {
-    display: block;
-  }
-  background: rgba(255, 255, 255, 0.6);
-  border-bottom: 5px solid #76656b;
-  margin-bottom: 20px;
+  background: #A3C7C7;
+}
+
+.dotted-line {
+  display: block;
+  background: url("http://www.cathkidston.com/pws/images/borders/border-dot-duck-egg.gif") repeat;
+  height: 10px;
 }
 
 .sub-nav {
-  font-family: Georgia, serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 20px;
   list-style-type: none;
   margin: 0;
-  margin-bottom: 5px;
-  padding: 0;
-  color: #625359;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
 
   li {
     display: inline-block;
+    border-right: 1px dotted #BCE6E6;
     width: 80px;
-    padding-top: 2px;
-    padding-bottom: 2px;
     text-align: center;
-    border-right: 1px solid #9e8f94;
   }
 
   li:last-child {

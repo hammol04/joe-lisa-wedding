@@ -17,47 +17,58 @@
   .fixed-left {
     width: 25%;
     background: rgba(255, 255, 255, 0.6);
-    border-top: 5px solid #76656b;
-    border-right: 5px solid #76656b;
-    border-bottom: 5px solid #76656b;
+    border: 5px solid #a3c7d2;
     padding: 10px;
     padding-bottom:40px;
+    margin-left: 20px;
 
     h2 {
       margin: 0;
       font-size: 25px;
-      color: #625359;
+      color: #5e8ab4;
     }
 
     h3 {
       font-size: 20px;
       font-weight: normal;
-      color: #76656b;
+      color: #a3c7d2;
     }
   }
 
   .fixed-right {
     background: rgba(255, 255, 255, 0.6);
-    width: 70%;
+    width: 50%;
     min-height: 100%;
   }
 
   #index-wrap {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 70%;
-    border-top: 5px solid #76656b;
-    border-left: 5px solid #76656b;
+    width: 100%;
     overflow: hidden;
 
-    .gallery {
-      cursor: move;
-      position: absolute;
-      overflow: hidden;
-      left: 0px;
-      top: 0px;
-      width: 100%;
+    .content {
+      width: 976px;
+      position: relative;
+      margin: 0 auto;
+      border-top: 5px solid #5e8ab4;
+      padding: 20px;
+    }
+  }
+
+  .map {
+    width: 40%;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .blue-block {
+    background: #5e8ab4;
+    padding: 20px;
+    width: 60%;
+    box-sizing: border-box;
+
+    * {
+      font-family: Helvetica, sans-serif;
+      color: #ffffff;
     }
   }
 
