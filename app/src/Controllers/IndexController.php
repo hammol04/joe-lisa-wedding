@@ -60,6 +60,7 @@ class IndexController {
 
     public function submitAction($app)
     {
+        $to = "jmpelectrical@gmail.com";
         $from = "247hammond@live.com";
 
         // Send email
@@ -68,11 +69,14 @@ class IndexController {
         $comments = $_GET['comments'];
 
         $message =
-        "Name: $name,
-        Is Coming?: $coming,
-        Comments: $comments";
+            "Name: $name
 
-        mail("247hammond@live.com", "Wedding Invitation Response", $message, "From: $from");
+            Is Coming?: $coming
+
+            Comments: $comments"
+        ;
+
+        mail($to, "Wedding Invitation Response", $message, "From: $from");
 
         return $app['twig']->render('base.html.twig', array(
             "page" => array(
