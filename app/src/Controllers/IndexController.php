@@ -46,6 +46,25 @@ class IndexController {
         ));
     }
 
+    public function galleryAction($app)
+    {
+        return $app['twig']->render('base.html.twig', array(
+            "page" => array(
+                "title"     => "home",
+                "nav"   => $app['twig']->render('nav.html.twig'),
+                "content"   => $app['twig']->render('gallery.html.twig'),
+                "css"       => $app['twig']->render('css.html.twig'),
+                "js"        => $app['twig']->render('js.html.twig', array(
+                    "jss" => array(
+                        "dep/jquery.min.js",
+                        "dep/jssor.slider.mini.js",
+                        "wedding.js"
+                    )
+                ))
+            )
+        ));
+    }
+
     public function contactAction($app)
     {
         return $app['twig']->render('base.html.twig', array(
