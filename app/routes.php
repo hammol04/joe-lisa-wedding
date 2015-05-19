@@ -17,3 +17,15 @@ $app->get('/taxis', function() use ($app) {
     $c = new wedding\joeandlisa\Controllers\IndexController();
     return $c->taxisAction($app);
 });
+
+// Contact
+$app->get('/contact', function() use ($app) {
+    $c = new wedding\joeandlisa\Controllers\IndexController();
+    return $c->contactAction($app);
+});
+
+// Submit
+$app->get('/submit', function() use ($app) {
+    $c = new wedding\joeandlisa\Controllers\IndexController();
+    return $c->submitAction($app);
+});
