@@ -1,49 +1,49 @@
 @media screen and (max-width: 799px) {
+  .blue-block {
+    background: #5e8ab4;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 
+    * {
+      font-family: Helvetica, sans-serif;
+      color: #ffffff;
+    }
+  }
 
   .content {
-    font-size: 16px;
-
-    h1 {
-      font-size: 40px;
-    }
+    overflow: hidden;
   }
 
-  .logo-nav {
-    text-align: center;
+  .map {
+    margin: 0 auto;
+    float: none;
   }
 
-  .fixed-left {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.6);
-    border-top: 5px solid #76656b;
-    border-bottom: 5px solid #76656b;
-    padding-bottom:40px;
-    margin-bottom: 20px;
-
-    h2 {
-      margin: 0;
-      margin-top: 10px;
-      margin-left: 10px;
-      font-size: 25px;
-      color: #625359;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin-left: 10px;
-      font-weight: normal;
-      color: #76656b;
-    }
-  }
-
-  .fixed-right {
-    background: rgba(255, 255, 255, 0.6);
-    width: 100%;
-    min-height: 100%;
-  }
-
-  #index-wrap {
+  .floral, .index-page .gallery {
     display: none;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form label {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+  }
+
+  .contact-form textarea, .contact-form input[type='text'] {
+    width: 200px;
+  }
+
+  .contact-form textarea {
+    height: 80px;
+  }
+
+  .contact-form input[type='submit'] {
+    margin-left: 10px;
+    font-size: 30px;
   }
 }

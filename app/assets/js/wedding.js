@@ -5,8 +5,10 @@
     }
 
     Wedding.prototype.init = function() {
-        if (window.innerWidth > 799) {
-            this.slider = new Slider();
+        if ( window.innerWidth > 799 ) {
+            if ( Slider !== undefined ) {
+                this.slider = new Slider();
+            }
         }
     };
 
