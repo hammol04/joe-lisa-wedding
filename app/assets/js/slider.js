@@ -5,7 +5,7 @@
     }
 
     Slider.prototype.init = function() {
-        if (window.innerWidth < 799) {
+        if (window.innerWidth < 1008) {
             document.querySelector("#index-gallery").style.width = window.innerWidth + "px";
             document.querySelector("#index-gallery .gallery").style.width = window.innerWidth + "px";
 

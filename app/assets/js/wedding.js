@@ -5,7 +5,7 @@
     }
 
     Wedding.prototype.init = function() {
-        if ( window.innerWidth > 799 ) {
+        if ( window.innerWidth > 1007 ) {
             if ( Slider !== undefined ) {
                 this.slider = new Slider();
             }
